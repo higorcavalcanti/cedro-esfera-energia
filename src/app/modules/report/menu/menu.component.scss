@@ -1,0 +1,42 @@
+section#report-menu {
+  margin-bottom: 40px;
+
+  ul {
+    padding: -1px;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.2);
+
+    li {
+      &.active {
+        margin-bottom: -1px;
+
+        &:after {
+          content:"";
+          background: linear-gradient(to left, #ffba8f, #f4436c);
+          display: block;
+          height: 1px;
+          width: 100%;
+        }
+
+        a {
+          color: #ef406d;
+        }
+      }
+
+
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(84, 84, 84, 0.2);
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
