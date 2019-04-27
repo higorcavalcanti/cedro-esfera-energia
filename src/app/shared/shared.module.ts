@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { TooltipModule } from 'ngx-bootstrap';
 
 import { CardComponent } from './components/card/card.component';
+import { BackToTopButtonComponent } from './components/back-to-top-button/back-to-top-button.component';
 
 const MODULES = [
   TooltipModule.forRoot()
 ];
 
 const COMPONENTS = [
-  CardComponent
+  CardComponent, BackToTopButtonComponent
 ];
 
 @NgModule({
