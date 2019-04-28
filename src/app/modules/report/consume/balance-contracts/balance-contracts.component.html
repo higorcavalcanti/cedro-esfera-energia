@@ -1,4 +1,31 @@
 <app-card cardTitle="Saldo contratual" helpMessage="Visualizar saldo contratual">
-  Teste
+  <div class="row">
+    <div class="col-12 col-lg-4 col-xl-3">
+      <div>
+        44.089.312 <sup>[B]</sup>
+      </div>
+      <div>
+        Quantidade (MWh)
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 col-xl-3">
+      <div>
+        R$ 183,50
+      </div>
+      <div>
+        Valor unitário (MWh)
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 col-xl-4">
+      <div>
+        {{ 6854692.24 | currency:'BRL'}}
+      </div>
+      <div>
+        Financeiro
+      </div>
+    </div>
+  </div>
 </app-card>
 

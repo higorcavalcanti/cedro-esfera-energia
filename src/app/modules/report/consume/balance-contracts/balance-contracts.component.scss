@@ -1,0 +1,27 @@
+div.row {
+  margin: 10px;
+
+  & > div {
+    &:not(:last-child) {
+      border-right: 1px solid #f5f8fa;
+    }
+
+    div {
+      &:first-child {
+        color: #ef406d;
+        font-size: 35px;
+        font-weight: bold;
+
+        sup {
+          font-size: 10px;
+          vertical-align: super;
+        }
+      }
+
+      &:nth-child(2){
+        color: #9b9b9b;
+        font-size: 16px;
+      }
+    }
+  }
+}
