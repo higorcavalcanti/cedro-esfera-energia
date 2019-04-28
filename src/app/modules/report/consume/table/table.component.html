@@ -1,0 +1,67 @@
+<div class="table-responsive">
+  <table class="themed-table">
+    <thead>
+    <tr>
+      <th rowspan="2">
+        Contraparte
+      </th>
+      <th rowspan="2">
+        Contratos de compras <div>(MWh)</div>
+      </th>
+      <th id="flexibilidade" colspan="2">
+        Flexibilidade
+      </th>
+      <th id="previsto" colspan="3">
+        Faturamento previsto
+      </th>
+    </tr>
+    <tr>
+      <td headers="flexibilidade">
+        Contratada
+      </td>
+      <td headers="flexibilidade">
+        Utilizada
+      </td>
+
+      <td headers="previsto">
+        Quantidade (MWh)
+      </td>
+
+      <td headers="previsto">
+        Valor Unitário (R$/MWh)
+      </td>
+
+      <td headers="previsto">
+        Financeiro
+      </td>
+    </tr>
+    </thead>
+
+    <tbody *ngIf="tableData.length">
+    <tr *ngFor="let data of tableData">
+      <td>{{data.contraParte}}</td>
+      <td>{{data.contratos | number:0}}</td>
+      <td>{{data.flexibilidade?.contratada}}</td>
+      <td>{{data.flexibilidade?.utilizada}}%</td>
+      <td>{{data.previsto?.mwh | number:0 }}</td>
+      <td>{{data.previsto?.valor | number:'1.2-2' }}</td>
+      <td>{{data.previsto?.financeiro | currency:'BRL'}}</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+      <td colspan="4"></td>
+      <td class="td-border">
+        {{ getResultMwh() | number: 0 }}
+      </td>
+      <td>
+        {{ getResultValor() | number:'1.2-2' }}
+      </td>
+      <td>
+        {{ getResultFinanceiro() | currency:'BRL' }}
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

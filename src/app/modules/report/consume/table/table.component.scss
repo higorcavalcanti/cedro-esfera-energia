@@ -1,0 +1,39 @@
+table {
+
+  thead {
+    tr {
+      th {
+        div {
+          font-size: 9px;
+          font-weight: normal;
+          text-align: right;
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        text-align: right;
+
+        &:first-child {
+          text-align: left;
+        }
+
+        &:nth-child(3), &:nth-child(4) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tfoot {
+    tr {
+      td {
+        text-align: right;
+      }
+    }
+  }
+}

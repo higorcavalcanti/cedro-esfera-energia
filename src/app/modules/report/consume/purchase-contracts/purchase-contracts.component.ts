@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReportConsumeTableItemModel } from '../../../../shared/models/report-consume-table-item-model';
 
 @Component({
   selector: 'app-report-consume-purchase-contracts',
@@ -7,14 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PurchaseContractsComponent implements OnInit {
 
-  colunms = [
+  tableData: Array<ReportConsumeTableItemModel> = [
     {
-      name: 'Contraparte',
+      contraParte: 'PROINFA',
+      contratos: 1669262,
+      flexibilidade: {
+        contratada: null,
+        utilizada: 100
+      },
+      previsto: {
+        mwh: 1629262,
+        valor: 0,
+        financeiro: 0
+      }
     },
     {
-      name: 'Contrato de compras'
+      contraParte: 'ENGIE BR GER',
+      contratos: 1488000,
+      flexibilidade: {
+        contratada: null,
+        utilizada: 100
+      },
+      previsto: {
+        mwh: 744000,
+        valor: 18350,
+        financeiro: 1365240
+      }
     }
-  ];
+  ] ;
 
   constructor() { }
 

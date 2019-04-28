@@ -9,13 +9,15 @@ import { ConsumeComponent } from './consume.component';
 import { PurchaseContractsComponent } from './purchase-contracts/purchase-contracts.component';
 import { AssignmentContractsComponent } from './assignment-contracts/assignment-contracts.component';
 import { BalanceContractsComponent } from './balance-contracts/balance-contracts.component';
+import { TableComponent } from './table/table.component';
 
 
 const COMPONENTS = [
   ConsumeComponent,
   PurchaseContractsComponent,
   AssignmentContractsComponent,
-  BalanceContractsComponent
+  BalanceContractsComponent,
+  TableComponent
 ];
 
 const MODULES = [
