@@ -1,0 +1,106 @@
+[
+  {
+    "contraParte": "PROINFA",
+    "contratos": 1669262,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 1629262,
+      "valor": 0,
+      "financeiro": 0
+    }
+  },
+  {
+    "contraParte": "ENGIE BR GER",
+    "contratos": 1488000,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 744000,
+      "valor": 18350,
+      "financeiro": 1365240
+    }
+  },
+  {
+    "contraParte": "BO ENERGY",
+    "contratos": 645546,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 6465464,
+      "valor": 64564,
+      "financeiro": 234224324
+    }
+  },
+  {
+    "contraParte": "VOTENER",
+    "contratos": 234234234,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 7657687,
+      "valor": 789797,
+      "financeiro": 123123131
+    }
+  },
+  {
+    "contraParte": "PROINFA",
+    "contratos": 1669262,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 1629262,
+      "valor": 0,
+      "financeiro": 0
+    }
+  },
+  {
+    "contraParte": "ENGIE BR GER",
+    "contratos": 1488000,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 744000,
+      "valor": 18350,
+      "financeiro": 1365240
+    }
+  },
+  {
+    "contraParte": "BO ENERGY",
+    "contratos": 645546,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 6465464,
+      "valor": 64564,
+      "financeiro": 234224324
+    }
+  },
+  {
+    "contraParte": "VOTENER",
+    "contratos": 234234234,
+    "flexibilidade": {
+      "contratada": null,
+      "utilizada": 100
+    },
+    "previsto": {
+      "mwh": 7657687,
+      "valor": 789797,
+      "financeiro": 123123131
+    }
+  }
+]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReportConsumeTableItemModel } from '../../../../shared/models/report-consume-table-item-model';
+import { ConsumoService } from '../../../../shared/services/consumo.service';
 
 @Component({
   selector: 'app-report-consume-purchase-contracts',
@@ -8,38 +9,15 @@ import { ReportConsumeTableItemModel } from '../../../../shared/models/report-co
 })
 export class PurchaseContractsComponent implements OnInit {
 
-  tableData: Array<ReportConsumeTableItemModel> = [
-    {
-      contraParte: 'PROINFA',
-      contratos: 1669262,
-      flexibilidade: {
-        contratada: null,
-        utilizada: 100
-      },
-      previsto: {
-        mwh: 1629262,
-        valor: 0,
-        financeiro: 0
-      }
-    },
-    {
-      contraParte: 'ENGIE BR GER',
-      contratos: 1488000,
-      flexibilidade: {
-        contratada: null,
-        utilizada: 100
-      },
-      previsto: {
-        mwh: 744000,
-        valor: 18350,
-        financeiro: 1365240
-      }
-    }
-  ] ;
+  tableData: Array<ReportConsumeTableItemModel>;
 
-  constructor() { }
+  constructor(private consumoService: ConsumoService) { }
 
   ngOnInit() {
+    this.tableData = null;
+    this.consumoService.getContratosCompra().subscribe(data => {
+      this.tableData = data;
+    });
   }
 
 }

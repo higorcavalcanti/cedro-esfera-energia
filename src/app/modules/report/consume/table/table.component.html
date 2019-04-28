@@ -1,5 +1,5 @@
 <div class="table-responsive">
-  <table class="themed-table">
+  <table class="themed-table" *ngIf="tableData && tableData.length">
     <thead>
     <tr>
       <th rowspan="2">
@@ -37,7 +37,7 @@
     </tr>
     </thead>
 
-    <tbody *ngIf="tableData.length">
+    <tbody>
     <tr *ngFor="let data of tableData">
       <td>{{data.contraParte}}</td>
       <td>{{data.contratos | number:0}}</td>

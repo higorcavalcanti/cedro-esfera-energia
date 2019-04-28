@@ -1,8 +1,8 @@
 <app-card cardTitle="Saldo contratual" helpMessage="Visualizar saldo contratual">
-  <div class="row">
+  <div class="row" *ngIf="data">
     <div class="col-12 col-lg-4 col-xl-3">
       <div>
-        44.089.312 <sup>[B]</sup>
+        {{ data?.quantidade | number:0 }} <sup>[B]</sup>
       </div>
       <div>
         Quantidade (MWh)
@@ -11,7 +11,7 @@
 
     <div class="col-12 col-lg-4 col-xl-3">
       <div>
-        R$ 183,50
+        {{ data?.valor | currency:'BRL' }}
       </div>
       <div>
         Valor unitário (MWh)
@@ -20,7 +20,7 @@
 
     <div class="col-12 col-lg-4 col-xl-4">
       <div>
-        {{ 6854692.24 | currency:'BRL'}}
+        {{ data?.financeiro | currency:'BRL'}}
       </div>
       <div>
         Financeiro

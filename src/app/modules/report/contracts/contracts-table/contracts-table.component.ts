@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ContractsService} from '../../../../shared/services/contracts.service';
+import {ReportContractsTableItemModel} from '../../../../shared/models/report-contracts-table-item-model';
 
 @Component({
   selector: 'app-report-contracts-table',
@@ -7,27 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContractsTableComponent implements OnInit {
 
-  tableData = [
-    { value: 20290437.79, name: 'Contratos de compra' },
-    { value: 13435745.55, name: 'Cessão de contratos' },
-    { value: 7392920.63, name: 'Operação prevista' },
-    { value: 7972096.15, name: 'Efeito de modulação CCEE' },
-  ];
+  tableData: Array<ReportContractsTableItemModel>;
 
   get resultadoPrevisto() {
-    if ( !this.tableData ) {
+    if ( !this.tableData || !this.tableData.length ) {
       return 0;
     }
     return this.tableData
       .map(data => data.value)
-      .reduce((sum, actual) => {
-        return actual + sum;
-      });
+      .reduce((sum, actual) => actual + sum);
   }
 
-  constructor() { }
+  constructor(private contractsService: ContractsService) { }
 
   ngOnInit() {
+    this.tableData = [];
+    this.contractsService.getData().subscribe(data => {
+      this.tableData = data;
+    });
   }
 
 
