@@ -6,10 +6,12 @@ import { CoreModule } from '../../../core/core.module';
 
 import { ContractsRoutingModule } from './contracts-routing.module';
 import { ContractsComponent } from './contracts.component';
+import { ContractsChartComponent } from './contracts-chart/contracts-chart.component';
+import { ContractsTableComponent } from './contracts-table/contracts-table.component';
 
 
 const COMPONENTS = [
-  ContractsComponent
+  ContractsComponent, ContractsChartComponent, ContractsTableComponent
 ];
 
 const MODULES = [

@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PurchaseContractsComponent implements OnInit {
 
+  colunms = [
+    {
+      name: 'Contraparte',
+    },
+    {
+      name: 'Contrato de compras'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {

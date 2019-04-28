@@ -1,0 +1,23 @@
+<table class="themed-table">
+  <tbody>
+    <tr *ngFor="let data of tableData">
+      <td>
+        {{data.name}}
+      </td>
+      <td>
+        {{data.value | currency:'BRL' }}
+      </td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+  <tr>
+    <td>
+      Resultado financeiro previsto
+    </td>
+    <td>
+      {{ resultadoPrevisto | currency:'BRL' }}
+    </td>
+  </tr>
+  </tfoot>
+</table>

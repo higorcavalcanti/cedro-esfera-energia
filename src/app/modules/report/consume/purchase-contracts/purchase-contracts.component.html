@@ -1,4 +1,79 @@
-<app-card title="Contratos de compra" helpMessage="Visualizar contratos de compra">
-  Teste
+<app-card cardTitle="Contratos de compra" helpMessage="Visualizar contratos de compra">
+  <table class="themed-table">
+
+    <thead>
+    <tr>
+      <th rowspan="2">
+        Contraparte
+      </th>
+      <th rowspan="2">
+        Contratos de compras
+      </th>
+      <th id="flexibilidade" colspan="2">
+        Flexibilidade
+      </th>
+      <th id="previsto" colspan="3">
+        Faturamento previsto
+      </th>
+    </tr>
+    <tr>
+      <td headers="flexibilidade">
+        Contratada
+      </td>
+      <td headers="flexibilidade">
+        Utilizada
+      </td>
+
+      <td headers="previsto">
+        Quantidade (MWh)
+      </td>
+
+      <td headers="previsto">
+        Valor Unitário (R$/MWh)
+      </td>
+
+      <td headers="previsto">
+        Financeiro
+      </td>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td>AAA</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+    </tr>
+    <tr>
+      <td>AAA</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+      <td>BBB</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+      <td colspan="4"></td>
+      <td class="td-border">
+        Resultado
+      </td>
+      <td>
+        CCCC
+      </td>
+      <td>
+        CCCC
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+
 </app-card>
 

@@ -1,12 +1,12 @@
 <div class="app-card">
   <div class="app-card-title">
-    <ng-template ngIf="title">
-      {{ title }}
-    </ng-template>
+    <span *ngIf="cardTitle && cardTitle.length > 0">
+      {{ cardTitle }}
+    </span>
 
-    <ng-template ngIf="helpMessage && helpMessage.lenth > 0">
+    <span *ngIf="helpMessage && helpMessage.length > 0">
       <i class="far fa-question-circle" [tooltip]="helpMessage"></i>
-    </ng-template>
+    </span>
   </div>
   <div class="app-card-body">
     <ng-content></ng-content>

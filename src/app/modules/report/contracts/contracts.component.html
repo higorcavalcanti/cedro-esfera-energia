@@ -1,3 +1,10 @@
-<app-card title="Saldo contratual" helpMessage="Visualizar saldo contratual">
-  Teste
+<app-card cardTitle="Saldo contratual" helpMessage="Visualizar saldo contratual">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6 col-lg-5">
+      <app-report-contracts-chart></app-report-contracts-chart>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <app-report-contracts-table></app-report-contracts-table>
+    </div>
+  </div>
 </app-card>
