@@ -1,5 +1,6 @@
-<table class="themed-table">
-  <tbody>
+<div class="table-responsive">
+  <table class="table themed-table">
+    <tbody>
     <tr *ngFor="let data of tableData">
       <td>
         {{data.name}}
@@ -8,16 +9,17 @@
         {{data.value | currency:'BRL' }}
       </td>
     </tr>
-  </tbody>
+    </tbody>
 
-  <tfoot>
-  <tr>
-    <td>
-      Resultado financeiro previsto
-    </td>
-    <td>
-      {{ resultadoPrevisto | currency:'BRL' }}
-    </td>
-  </tr>
-  </tfoot>
-</table>
+    <tfoot>
+    <tr>
+      <td>
+        Resultado financeiro previsto
+      </td>
+      <td>
+        {{ resultadoPrevisto | currency:'BRL' }}
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
